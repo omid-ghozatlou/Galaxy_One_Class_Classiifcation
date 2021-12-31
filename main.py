@@ -13,9 +13,9 @@ from datasets.galData import load_dataset
 # Settings
 ################################################################################
 @click.command()
-@click.argument('xp_path',default='D:/Omid/Galaxy-classification-master_0/imgs', type=click.Path(exists=True))
-@click.argument('train_test_data_path', default='D:/Omid/Galaxy-classification-master_0/data/Apple/train_test.csv',type=click.Path(exists=True))
-@click.argument('apply_model_data_path',default='D:/Omid/Galaxy-classification-master_0/data/Apple/apply_model.csv', type=click.Path(exists=True))
+@click.argument('xp_path',default='./imgs', type=click.Path(exists=True))
+@click.argument('train_test_data_path', default='./data/Apple/train_test.csv',type=click.Path(exists=True))
+@click.argument('apply_model_data_path',default='./data/Apple/apply_model.csv', type=click.Path(exists=True))
 @click.option('--load_config', type=click.Path(exists=True), default=None,
               help='Config JSON-file path (default: None).')
 @click.option('--load_model', type=click.Path(exists=True), default=None,
